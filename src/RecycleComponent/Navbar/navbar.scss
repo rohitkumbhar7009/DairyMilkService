@@ -1,0 +1,176 @@
+:root{
+    --bg: #242526;
+    --bg-accents:#484a4d;
+    // --text-color: #dadce1;
+    --text-color: #3e3e3f;
+    --nav-size: 60px;
+    --border: 1px solid #474a4d;
+    --border-radius: 8px;
+    --speed: 500ms;  
+  }
+  
+  ul{
+    list-style: none !important;
+    margin:0;
+    padding: 0;
+  }
+  
+  a{
+    color: var(--text-color) !important;
+    text-decoration:none;
+  }
+  @keyframes animate {
+    0%{
+      transform:translate(100px,-100px);
+    }
+    100%{
+      transform:translate(0px,0px);
+    }
+  }
+
+
+.navbarShrink{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin:0.5rem;
+    z-index:2;
+
+
+    .hamburger{
+      border:none;
+      border-radius: var(--border-radius);
+      width:50px;
+      height:30px;
+      margin-right:auto;
+
+      // background:rgba(0,0,0,0.3);
+      background-color: red;
+      box-shadow: 0 4px 30px rgba(255,255,255,0.1);
+      backdrop-filter: blur(5px);
+    }
+    .navbarContainer{
+      position: absolute;
+      top:30px;
+      width: 70vw;
+      height:80vh;
+      max-height: 400px;
+      animation:animate 1s ease-out;
+      border-radius: var(--border-radius);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background: rgba( 255, 255, 255, 0.35 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 6px ); 
+      -webkit-backdrop-filter: blur( 6px );
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    }
+
+    .logo{
+      max-width: 50px;
+      height:50px;
+      max-height: 50px;
+      border-radius:50%;
+      background-color: red;
+    }  
+
+    
+    .navbar-ul{
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--border-radius);      
+      padding:0.5rem;
+    }
+    
+    .nav-item{
+      width:70%;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      border-radius: var(--border-radius);
+      transition: background var(--speed);
+
+      background-color: #001220;
+      background-image: linear-gradient(135deg, #4FACF7 0%, #41436b 100%);
+      box-shadow: 0 4px 30px rgba(255,255,255,0.1);
+      backdrop-filter: blur(5px);
+      font-weight: bold;
+    }
+    .nav-item:hover{
+      filter: brightness(1.2);  
+    }
+  }
+ .navbarFull{ 
+     z-index: 2;
+     width:100%;
+     position: relative;
+
+    .navbarContainer{
+      height:var(--nav-size);
+    //   padding:0 1rem;
+      border-bottom: var(--border);
+      width:100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      
+      //glass effect
+      // background:rgb(0, 18, 32,0.3); 
+      background:rgb(193, 217, 248);
+      box-shadow: 0 4px 30px rgba(255,255,255,0.1);
+    }
+
+    .logo{
+      max-width: 50px;
+      height:50px;
+      border-radius:50%;
+      margin-left: 0.5rem;
+    }
+    // .navbar-padding{
+    //     // margin-right: 1rem;
+    // }
+    .navbar-ul{
+      max-width:fit-content;
+      height: 100%;
+      display: flex;
+      // justify-content: flex-end;   
+      align-items: center;
+      gap:2rem; 
+    }
+    .nav-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(var(--nav-size)*0.8);
+      border-radius: var(--border-radius);
+      min-width:70px;
+      font-weight: bold;
+      height:fit-content;
+      padding: 0.5rem 0.5rem;
+
+
+      // background-color: #8171d2;
+      // background-image: linear-gradient(135deg, #b5cfe4 0%, #8287ee 100%);
+      background-color:rgb(193, 217, 248);
+      box-shadow: 0 4px 30px rgba(255,255,255,0.1);
+      backdrop-filter: blur(5px);
+      // border: 1px solid #8171d2;
+    }
+    .nav-item:hover{
+      background-color: rgba(194, 194, 198,0.2);
+      
+      // background-image: linear-gradient(135deg, #4695d5 0%, #8287ee 100%);
+      filter: brightness(1.2);  
+    }
+    
+}

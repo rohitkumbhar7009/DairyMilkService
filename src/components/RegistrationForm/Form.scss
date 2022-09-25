@@ -1,0 +1,51 @@
+.Form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #363740;
+    // background-size:cover;
+    // background-position: center;
+}
+
+.registration{
+    background-color: #fff;
+    padding:0px 60px;
+    border-radius: 10px;
+    margin-top:1rem;
+    width:40%;
+}
+
+h1{
+    color: rgb(27, 85, 162);
+    text-align: center;
+}
+img{
+    max-width:40vw;
+    height:80vh;
+    min-height: 500px;
+}
+.formContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:2rem;
+    justify-content: space-evenly;
+
+}
+
+.RegisterButton{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border:none;
+    background-color: blueviolet;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,107 @@
+.loginContainer{
+    display: flex;
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #363740;
+}
+
+.loginForm{
+    width:300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding:2rem 1.5rem;
+    border-radius:1rem;
+}
+
+.options{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+
+    .customer{
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border:solid 1px #3751FF;
+    }
+
+    .supplier{
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border:solid 1px #3751FF;
+    }
+}
+
+.options:hover{
+    cursor:pointer;
+}
+
+.top{
+    margin: 1.5rem auto;
+
+    .header{
+        color:252733;
+        font-weight:bold;
+        font-size:24px;
+    }
+}
+
+.elements{
+
+
+    .emailInput{
+        label{
+            font-weight: bold;
+            color:#9FA2B4;
+            font-size: 12px;
+        }
+        input{
+            width:80%;
+        }
+    }
+
+    .password{
+        label{
+            font-weight: bold;
+            color:#9FA2B4;
+            font-size: 12px;
+        }
+        input{
+            width:80%;
+        }
+    }
+}
+
+.loginButton{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border:none;
+    background-color: #3751FF;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.register{
+    text-align: center;
+    color:#3751FF;
+    font-weight:bold;
+    // width:fit-content;
+    margin:auto;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+.register:hover{
+    cursor:pointer;
+    filter:brightness(1.2);
+    color:#fff;
+    background-color: #3751FF;
+}
