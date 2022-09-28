@@ -3,7 +3,9 @@ import logo from '../images/logo.svg'
 const Logo = () => {
   return (
     <div className='logoContainer'>
-      <img src={logo} className='logo' />
+      <div className="resizeImg">
+        <img src={logo} className='logo' />
+      </div>
     </div>
   )
 }
